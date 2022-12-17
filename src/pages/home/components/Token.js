@@ -47,7 +47,7 @@ const Token = () => {
                     </Box>
                     <Box sx={{ marginLeft: '15px' }}>
                         <p style={{ fontSize: '18px', fontWeight: "500" }} className="text-white mb-0">
-                            BSUD <span style={{ opacity: 0.5, fontSize: '12px' }}> | Busd USD</span>
+                            BUSD <span style={{ opacity: 0.5, fontSize: '12px' }}> | Busd USD</span>
                         </p>
                         <p style={{ opacity: 0.7 }} className="text-white mb-0">
                             $1.000 USD
