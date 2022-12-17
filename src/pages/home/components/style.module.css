@@ -1,0 +1,95 @@
+.ps_container {
+    /* width: 100%; */
+    height: 400px;
+    background: linear-gradient(180deg,
+            rgba(251, 191, 4, 0) 0%,
+            rgba(251, 191, 4, 0.05) 100%);
+    /* background: linear-gradient(180deg, rgba(251, 191, 4, 0) 0%, rgba(251, 191, 4, 0.05) 100%);  */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    /* backdrop-filter: blur(100px); */
+    border-radius: 20px;
+    padding: 20px 20px 0px 20px;
+    position: relative;
+}
+
+.amount_grid_container {
+    padding-right: 15px;
+}
+
+.ps_container1 {
+    height: 400px;
+    /* background: linear-gradient(180deg,
+            rgba(251, 191, 4, 0) 0%,
+            rgba(251, 191, 4, 0.05) 100%); */
+    background: url('../../../assets/images/rect.png');
+    background-size: cover;
+    background-position: center;
+    /* background: linear-gradient(90deg, #2337E9 0%, #E92323 54.69%, #7ECA1A 100%); */
+    /* background: linear-gradient(180deg, rgba(251, 191, 4, 0) 0%, rgba(251, 191, 4, 0.05) 100%);  */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    /* backdrop-filter: blur(100px); */
+    border-radius: 20px;
+    padding: 20px 20px 0px 20px;
+    position: relative;
+}
+
+.innerBox {
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 30px 30px 0px 0px;
+    padding: 20px;
+}
+
+.time {
+    text-align: center;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.time h2 {
+    color: #fbbf04;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.time p {
+    color: white;
+    margin-bottom: 0px;
+}
+
+/* Amount Css */
+
+.amountContainer {
+    background: linear-gradient(180deg,
+            rgba(251, 191, 4, 0) 0%,
+            rgba(251, 191, 4, 0.05) 100%);
+    border: 1px solid rgba(251, 191, 4, 0.2);
+    backdrop-filter: blur(100px);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .time h2 {
+        font-size: 25px;
+    }
+
+    .time p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:600px) {
+    .amount_grid_container {
+        padding-right: 0px;
+    }
+}

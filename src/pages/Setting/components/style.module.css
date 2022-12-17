@@ -1,0 +1,61 @@
+.ps_container {
+  /* width: 100%; */
+  height: 400px;
+  background: linear-gradient(
+    180deg,
+    rgba(251, 191, 4, 0) 0%,
+    rgba(251, 191, 4, 0.05) 100%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(100px);
+  border-radius: 20px;
+  padding: 20px 20px 0px 20px;
+  position: relative;
+}
+
+.innerBox {
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 30px 30px 0px 0px;
+  padding: 20px;
+}
+
+.time {
+  text-align: center;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.time h2 {
+  color: #fbbf04;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.time p {
+  color: white;
+  margin-bottom: 0px;
+}
+
+/* Amount Css */
+
+.amountContainer {
+  background: linear-gradient(
+    180deg,
+    rgba(251, 191, 4, 0) 0%,
+    rgba(251, 191, 4, 0.05) 100%
+  );
+  border: 1px solid rgba(251, 191, 4, 0.2);
+  backdrop-filter: blur(100px);
+  border-radius: 15px;
+  padding: 20px;
+}

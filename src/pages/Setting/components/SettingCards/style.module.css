@@ -1,0 +1,22 @@
+
+.value{
+    font-family: Inter;
+font-size: 16px;
+font-weight: 600;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: left;
+color: #FFFFFF;
+
+
+}
+.desc{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    /* line-height: 20px; */
+    text-align: left;
+    color: #bab8b1;
+    
+}
