@@ -3,7 +3,7 @@ import React from 'react'
 import { Card, Header, Layout, LeftBar } from '../../components';
 import imgDemo from '../../assets/images/demo.png';
 import LockPeriod from './components/LockPeriod';
-import Stalking from './components/Stalking';
+import Staking from './components/Staking';
 import Amount from './components/Amount';
 import Token from './components/Token';
 
@@ -20,7 +20,7 @@ const Home = () => {
                 container sx={{ marginTop: '5px' }}
                 spacing={2}>
                 <LockPeriod />
-                <Stalking />
+                <Staking />
             </Grid>
             <Grid
                 container

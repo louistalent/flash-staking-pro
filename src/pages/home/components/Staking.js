@@ -11,7 +11,7 @@ import {
 import Chart from "react-apexcharts";
 
 import styles from "./style.module.css";
-const Stalking = () => {
+const Staking = () => {
 	const options = {
 		chart: {
 			toolbar: { show: false },
@@ -82,16 +82,16 @@ const Stalking = () => {
 					display={"flex"}
 					justifyContent="space-between"
 					alignItems="center"
-					flexDirection={{ xs: "column", lg: "row" }}
+					flexDirection={{ xs: "row", lg: "row" }}
 				>
 					<Box sx={{ flex: 1 }}>
-						<h4 className="text-white" style={{ fontSize: "20px" }}>
+						<h4 className="text-white" style={{ fontSize: "20px", margin: '0px' }}>
 							Staking
 						</h4>
 					</Box>
 					<Box sx={{ flex: 1, width: "100%", display: "flex" }}>
 						<Box sx={{ flex: 1 }}>
-							<FormControl fullWidth sx={{ marginTop: "10px" }}>
+							<FormControl fullWidth sx={{}}>
 								{/* <InputLabel
                   id="demo-simple-select-label"
                   sx={{ color: "white" }}
@@ -103,8 +103,8 @@ const Stalking = () => {
 									disableUnderline
 									variant="standard"
 									sx={{
-										padding: "5px 15px",
-										fontSize: "18px",
+										padding: { xs: '3px 5px', sm: '5px 15px' },
+										fontSize: { xs: '14px', sm: '18px' },
 										fontWight: 500,
 										borderRadius: "5px",
 										color: "white",
@@ -127,7 +127,7 @@ const Stalking = () => {
 							</FormControl>
 						</Box>
 						<Box sx={{ flex: 1, paddingLeft: "10px" }}>
-							<FormControl fullWidth sx={{ marginTop: "10px" }}>
+							<FormControl fullWidth sx={{}}>
 								{/* <InputLabel
                   id="demo-simple-select-label"
                   sx={{ color: "white" }}
@@ -139,8 +139,8 @@ const Stalking = () => {
 									disableUnderline
 									variant="standard"
 									sx={{
-										padding: "5px 15px",
-										fontSize: "18px",
+										padding: { xs: '3px 5px', sm: '5px 15px' },
+										fontSize: { xs: '14px', sm: '18px' },
 										fontWight: 500,
 										borderRadius: "5px",
 										color: "white",
@@ -162,14 +162,14 @@ const Stalking = () => {
 						</Box>
 					</Box>
 				</Box>
-				<Box sx={{ flex: 1 }} display="flex" alignContent={"center"} style={{ color: 'white', paddingTop: '5px' }} >
+				<Box sx={{ flex: 1 }} display="flex" alignContent={"center"} style={{ color: 'white', paddingTop: '15px' }} >
 					<h4 className="text-white" style={{ fontSize: "20px" }}>
 						46,568.23 &nbsp;
 					</h4>
 					<span className="" style={{ opacity: '0.5' }}>/ Svent Staked</span>
 				</Box>
 
-				<Box sx={{ marginTop: "10px" }}>
+				<Box sx={{ marginTop: "0px" }}>
 					<Chart
 						options={options}
 						series={series}
@@ -184,4 +184,4 @@ const Stalking = () => {
 	);
 };
 
-export default Stalking;
+export default Staking;

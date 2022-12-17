@@ -21,7 +21,7 @@ const StackDashboard = () => {
       </Grid>
       <Grid container sx={{ marginTop: "20px", marginBottom: "30px" }} spacing={2}>
         <FlashTokens />
-        <FlashMigration />
+        {/* <FlashMigration /> */}
         {/* <LockPeriod /> */}
       </Grid>
       {/* <Grid container sx={{ marginTop: "20px" }}> */}

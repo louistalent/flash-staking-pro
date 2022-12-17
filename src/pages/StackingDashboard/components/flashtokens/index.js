@@ -37,7 +37,7 @@ const index = () => {
     },
   ];
   return (
-    <Grid item lg={7} md={7} xs={12} sx={{ paddingRight: { xs: "0px", md: '10px' } }}>
+    <Grid item lg={10} md={10} xs={12} sx={{ paddingRight: { xs: "0px", md: '10px', margin: 'auto' } }}>
       <Grid className={styles.ps_container}>
         <Box
           display={"flex"}
@@ -45,12 +45,13 @@ const index = () => {
           alignItems="center"
           flexDirection={{ xs: "column", lg: "row" }}
         >
-          <Box sx={{ flex: 1 }}>
+          <Box sx={{ flex: 1, textAlign: 'center' }}>
             <Typography className={styles.Shaketext}>
               Stake your Flash Tokens
             </Typography>
           </Box>
         </Box>
+
         <Box sx={{ marginTop: "20px" }}>
           {/* <Grid className={styles.amountContainer}> */}
           <Box display="flex" flexDirection={{ xs: "column", md: "row" }}>
@@ -60,18 +61,20 @@ const index = () => {
               </Typography>
             </Box>
           </Box>
-
+          <br className="desktop-show-only" />
           <Grid container spacing={1}>
             <Grid item xs={12} md={4}>
               <Button fontSize="12px" label="90 Days - 10% Reward" border={'1px solid #FBBF04'} bg="linear-gradient(180deg, rgba(161, 241, 55, 0.005) 0%, rgba(161, 241, 55, 0.05) 100%)" />
             </Grid>
             <Grid item xs={12} md={4}>
-              <Button fontSize="12px" label="Claim Flash Token" border={'1px solid rgba(255, 255, 255, 0.2)'} bg="linear-gradient(180deg, rgba(251, 191, 4, 0) 0%, rgba(251, 191, 4, 0.05) 100%)" />
+              <Button fontSize="12px" label="180 Days - 25% Reward" border={'1px solid rgba(255, 255, 255, 0.2)'} bg="linear-gradient(180deg, rgba(251, 191, 4, 0) 0%, rgba(251, 191, 4, 0.05) 100%)" />
             </Grid>
             <Grid item xs={12} md={4}>
               <Button fontSize="12px" label="365 Days - 50% Reward" border={'1px solid rgba(255, 255, 255, 0.2)'} bg="linear-gradient(180deg, rgba(251, 191, 4, 0) 0%, rgba(251, 191, 4, 0.05) 100%)" />
             </Grid>
             <Grid item md={12} mt={3}>
+              <br className="desktop-show-only" />
+
               <Typography className={styles.durationtxt}>
                 Amount to Stake Flash Token
               </Typography>
@@ -106,11 +109,14 @@ const index = () => {
                   </Box>
                 </Box>
               </Box>
+              <br className="desktop-show-only" />
+              <br className="desktop-show-only" />
+
             </Grid>
             <Grid item xs={12} md={6} mt={2}>
               <Button fontSize="12px" label="Unstake Now" />
             </Grid>
-            <Grid item xs={12} md={6} mt={2}>
+            <Grid item xs={12} md={6} mt={2} sx={{}}>
               <Button label="Stake" color={'black'} bg="#FBBF04" colors />
             </Grid>
           </Grid>

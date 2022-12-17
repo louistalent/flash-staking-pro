@@ -9,7 +9,7 @@ import Header2 from "../../../../components/Header2";
 import { LeftBar } from "../../../../components";
 // import Settingheader from "../Header"
 
-// import Stalking from '../Stalking';
+// import Staking from '../Staking';
 // import { Header, LeftBar } from '../all';
 
 const Layout = ({ children }) => {
@@ -33,7 +33,7 @@ const Layout = ({ children }) => {
           mainHeading="Profile Settings"
           mobile={mobile}
 
-          //   mainHeading="Staking"
+        //   mainHeading="Staking"
         />
         <Box sx={{ paddingX: "30px", height: "90vh", overflowY: "auto" }}>
           {children}

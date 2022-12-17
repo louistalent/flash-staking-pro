@@ -125,15 +125,6 @@ export default function MobileDrawer({ mobile }) {
 						<p className="text-white mt-3 fw-bold">Flash Technologies</p>
 						<hr className="text-white" />
 					</Box>
-					<NavLink
-						to="/"
-						className={({ isActive }) =>
-							isActive ? styles.activeLinkHamburger : styles.inActiveLinkHamburger
-						}
-					>
-						<MdInsertChart className={styles.imgBar} />
-						Staking
-					</NavLink>
 
 					<NavLink
 						to="/StackDashboard"
@@ -144,6 +135,16 @@ export default function MobileDrawer({ mobile }) {
 						<TiChartAreaOutline className={styles.imgBar} />
 						Dashboard
 					</NavLink>
+					<NavLink
+						to="/"
+						className={({ isActive }) =>
+							isActive ? styles.activeLinkHamburger : styles.inActiveLinkHamburger
+						}
+					>
+						<MdInsertChart className={styles.imgBar} />
+						Staking
+					</NavLink>
+
 
 					<NavLink
 						to="/Profile"

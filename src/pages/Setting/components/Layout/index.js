@@ -5,10 +5,10 @@ import { Box } from "@mui/material";
 import Header2 from "../../../../components/Header2";
 
 import { LeftBar } from "../../../../components";
-// import Stalking from '../Stalking';
+// import Staking from '../Staking';
 // import { Header, LeftBar } from '../all';
 
-const Layout = ({ children,mainHeading }) => {
+const Layout = ({ children, mainHeading }) => {
   const [mobile, setMobile] = useState();
 
   useEffect(() => {
@@ -29,7 +29,7 @@ const Layout = ({ children,mainHeading }) => {
           mainHeading="Settings"
           mobile={mobile}
 
-          //   mainHeading="Staking"
+        //   mainHeading="Staking"
         />
         <Box sx={{ paddingX: "30px", height: "90vh", overflowY: "auto" }}>
           {children}

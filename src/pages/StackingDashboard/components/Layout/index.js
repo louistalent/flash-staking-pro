@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { Box } from "@mui/material";
 import Header2 from "../../../../components/Header2";
 import { LeftBar } from "../../../../components";
-// import Stalking from '../Stalking';
+// import Staking from '../Staking';
 // import { Header, LeftBar } from '../all';
 
 const Layout = ({ children }) => {
@@ -23,7 +23,7 @@ const Layout = ({ children }) => {
     <Box sx={{ display: "flex", width: "100%" }}>
       <LeftBar mobile={mobile} />
       <Box sx={{ width: "100%" }}>
-      <Header2
+        <Header2
           mainHeading="Staking Dashboard"
           mobile={mobile}
         />

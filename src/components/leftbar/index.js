@@ -39,6 +39,17 @@ const Index = ({ mobile }) => {
 				</Box>
 
 				<Box className={styles.linkContainer}>
+
+					<NavLink
+						to="/StackDashboard"
+						className={({ isActive }) =>
+							isActive ? styles.activeLink : styles.inActiveLink
+						}
+					>
+						<TiChartAreaOutline className={styles.imgBar} />
+						{/* <img src={Stackdashboard} alt="Profile" className={styles.imgBar} /> */}
+						{mobile > 600 ? "Dashboard" : ""}
+					</NavLink>
 					<Box onClick={() => setValue(false)}>
 						<NavLink
 							to="/"
@@ -57,17 +68,6 @@ const Index = ({ mobile }) => {
 							{/* {mobile > 300 ? "Staking" : ""} */}
 						</NavLink>
 					</Box>
-					<NavLink
-						to="/StackDashboard"
-						className={({ isActive }) =>
-							isActive ? styles.activeLink : styles.inActiveLink
-						}
-					>
-						<TiChartAreaOutline className={styles.imgBar} />
-						{/* <img src={Stackdashboard} alt="Profile" className={styles.imgBar} /> */}
-						{mobile > 600 ? "Dashboard" : ""}
-					</NavLink>
-
 					<NavLink
 						onClick={() => setValue(false)}
 						to="/Profile"

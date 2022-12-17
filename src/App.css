@@ -59,6 +59,16 @@ body {
   .mo-show-only {
     display: flex;
   }
+
+  .desktop-show-only {
+    display: none;
+  }
+}
+
+@media (min-width:600px) {
+  .desktop-show-only {
+    display: flex;
+  }
 }
 
 /* support */
