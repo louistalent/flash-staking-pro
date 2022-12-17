@@ -40,16 +40,7 @@ const Index = ({ mobile }) => {
 
 				<Box className={styles.linkContainer}>
 
-					<NavLink
-						to="/StackDashboard"
-						className={({ isActive }) =>
-							isActive ? styles.activeLink : styles.inActiveLink
-						}
-					>
-						<TiChartAreaOutline className={styles.imgBar} />
-						{/* <img src={Stackdashboard} alt="Profile" className={styles.imgBar} /> */}
-						{mobile > 600 ? "Dashboard" : ""}
-					</NavLink>
+
 					<Box onClick={() => setValue(false)}>
 						<NavLink
 							to="/"
@@ -64,10 +55,20 @@ const Index = ({ mobile }) => {
 								<MdInsertChart className={styles.imgBar} />
 							)}
 
-							{mobile > 600 ? "Staking" : ""}
+							{mobile > 600 ? "Dashboard" : ""}
 							{/* {mobile > 300 ? "Staking" : ""} */}
 						</NavLink>
 					</Box>
+					<NavLink
+						to="/Staking"
+						className={({ isActive }) =>
+							isActive ? styles.activeLink : styles.inActiveLink
+						}
+					>
+						<TiChartAreaOutline className={styles.imgBar} />
+						{/* <img src={Stackdashboard} alt="Profile" className={styles.imgBar} /> */}
+						{mobile > 600 ? "Staking" : ""}
+					</NavLink>
 					<NavLink
 						onClick={() => setValue(false)}
 						to="/Profile"

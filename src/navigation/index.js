@@ -14,7 +14,7 @@ const AppRouter = () => {
                     <Route path='/' element={<Home />} />
                     <Route path='/Profile' element={<Profile />} />
                     <Route path='/Setting' element={<Setting />} />
-                    <Route path='/StackDashboard' element={<StackDashboard />} />
+                    <Route path='/Staking' element={<StackDashboard />} />
                     <Route path='/Support' element={<Support />} />
                     <Route path='/Chatlist' element={<Chatlist />} />
                     <Route path='/Chatboard' element={<Chatboard />} />

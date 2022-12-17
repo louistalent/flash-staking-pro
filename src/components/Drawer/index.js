@@ -127,21 +127,21 @@ export default function MobileDrawer({ mobile }) {
 					</Box>
 
 					<NavLink
-						to="/StackDashboard"
-						className={({ isActive }) =>
-							isActive ? styles.activeLinkHamburger : styles.inActiveLinkHamburger
-						}
-					>
-						<TiChartAreaOutline className={styles.imgBar} />
-						Dashboard
-					</NavLink>
-					<NavLink
 						to="/"
 						className={({ isActive }) =>
 							isActive ? styles.activeLinkHamburger : styles.inActiveLinkHamburger
 						}
 					>
 						<MdInsertChart className={styles.imgBar} />
+						Dashboard
+					</NavLink>
+					<NavLink
+						to="/Staking"
+						className={({ isActive }) =>
+							isActive ? styles.activeLinkHamburger : styles.inActiveLinkHamburger
+						}
+					>
+						<TiChartAreaOutline className={styles.imgBar} />
 						Staking
 					</NavLink>
 
