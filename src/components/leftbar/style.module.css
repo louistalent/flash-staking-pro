@@ -4,6 +4,31 @@
   background-color: #201d16;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
+  position: relative;
+}
+
+.LeftSocialIcons {
+  position: absolute;
+  bottom: 50px;
+  left: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 29px;
+  color: white !important;
+
+}
+
+.LeftSocialIcons a {
+  cursor: pointer;
+  color: white;
+}
+
+.LeftSocialIcons a:hover {
+  cursor: pointer;
+  scale: 1.1;
 }
 
 .innerContainer {

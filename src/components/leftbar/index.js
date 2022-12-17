@@ -1,25 +1,27 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 import imgLogo from "../../assets/images/logo.png";
-import imgStaking from "../../assets/images/staking.png";
-import imgUser from "../../assets/images/user.png";
-import imBell from "../../assets/images/bell.png";
-import imgEnvelope from "../../assets/images/envelope.png";
+// import imgStaking from "../../assets/images/staking.png";
+// import imgUser from "../../assets/images/user.png";
+// import imBell from "../../assets/images/bell.png";
+// import imgEnvelope from "../../assets/images/envelope.png";
 
 import styles from "./style.module.css";
 import { Box, Button } from "@mui/material";
 // import imgLogo from "../../assets/images/logo.png";
-import Stackdashboard from "../../assets/images/Stackdashboard.png";
+// import Stackdashboard from "../../assets/images/Stackdashboard.png";
 // import imgUser from "../../assets/images/user.png";
 // import imBell from "../../assets/images/bell.png";
 // import imgEnvelope from "../../assets/images/envelope.png";
-import setting from "../../assets/images/setting.png";
+// import setting from "../../assets/images/setting.png";
 // import { Tune } from "@mui/icons-material";
 
 import { BsFillEnvelopeFill } from 'react-icons/bs';
 import { MdSettings, MdPerson, MdInsertChart } from 'react-icons/md';
 import { TiChartAreaOutline } from 'react-icons/ti';
+import { FaTelegramPlane, FaTwitter } from 'react-icons/fa';
+import WebsiteIcon from "../../assets/images/website.svg";
 
 const Index = ({ mobile }) => {
 	const [value, setValue] = useState(true);
@@ -39,8 +41,6 @@ const Index = ({ mobile }) => {
 				</Box>
 
 				<Box className={styles.linkContainer}>
-
-
 					<Box onClick={() => setValue(false)}>
 						<NavLink
 							to="/"
@@ -97,16 +97,6 @@ const Index = ({ mobile }) => {
 						{/* <img src={setting} alt="Profile" className={styles.imgBar} /> */}
 						{mobile > 600 ? "Setting" : ""}
 					</NavLink>
-
-					{/* <NavLink
-            to="/Notification"
-            className={({ isActive }) =>
-              isActive ? styles.activeLink : styles.inActiveLink
-            }
-          >
-            <img src={imBell} alt="Notification" className={styles.imgBar} />
-            {mobile > 600 ? "Notification" : ""}
-          </NavLink> */}
 					<NavLink
 						to="/Support"
 						className={({ isActive }) =>
@@ -118,6 +108,17 @@ const Index = ({ mobile }) => {
 						{mobile > 600 ? "Support" : ""}
 					</NavLink>
 				</Box>
+			</Box>
+			<Box className={styles.LeftSocialIcons}>
+				<a href="https://flash-technologies.org/" target="_blink">
+					<img className="" width={'25px'} src={WebsiteIcon} alt='website' />
+				</a>
+				<a href="https://twitter.com/Flash_Techno_Of" target="_blink">
+					<FaTwitter />
+				</a>
+				<a href="https://t.me/flashtokenenglish" target="_blink">
+					<FaTelegramPlane />
+				</a>
 			</Box>
 		</Box>
 	);
