@@ -28,7 +28,8 @@ import { BiMenu } from "react-icons/bi";
 import { BsFillEnvelopeFill } from 'react-icons/bs';
 import { MdSettings, MdPerson, MdInsertChart } from 'react-icons/md';
 import { TiChartAreaOutline } from 'react-icons/ti';
-
+import { FaTelegramPlane, FaTwitter } from 'react-icons/fa';
+import WebsiteIcon from "../../assets/images/website.svg";
 
 const drawerWidth = 240;
 
@@ -176,7 +177,19 @@ export default function MobileDrawer({ mobile }) {
 					</NavLink>
 				</List>
 				{/* <Divider /> */}
+				<Box sx={{ display: 'flex', justifyContent: 'start', alignItems: 'center', gap: '20px', mt: '30px', ml: '25px' }}>
+					<a href="https://flash-technologies.org/" target="_blink">
+						<img className="" width={'25px'} src={WebsiteIcon} alt='website' />
+					</a>
+					<a href="https://twitter.com/Flash_Techno_Of" target="_blink">
+						<FaTwitter color="white" fontSize={'29px'} />
+					</a>
+					<a href="https://t.me/flashtokenenglish" target="_blink">
+						<FaTelegramPlane color="white" fontSize={'29px'} />
+					</a>
+				</Box>
 			</Drawer>
+
 		</Box>
 	);
 }
