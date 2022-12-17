@@ -22,7 +22,7 @@ const CustomButton = ({ label, bg, color, fontSize, border, height }) => {
             ? bg
             : "linear-gradient(180deg, rgba(161, 241, 55, 0.005) 0 %, rgba(161, 241, 55, 0.05) 100 %)",
         },
-        height: height ? height : "30px"
+        height: height ? height : "54px"
       }}
     >
       {label}
