@@ -49,7 +49,7 @@ const Stalking = () => {
 		},
 
 		xaxis: {
-			categories: ["Jun 16", "Jun 17", "Jun 18", "Jun 19", "Jun 20"],
+			categories: ["Jun 16", "Jun 17", "Jun 18", "Jun 19", "Jun 20", "Jun 21", "Jun 22", "Jun 23", "Jun 24"],
 			labels: {
 				style: {
 					colors: "white",
@@ -60,7 +60,7 @@ const Stalking = () => {
 		},
 		yaxis:
 		{
-			categories: ["1", "2", "3", "4", "5"],
+			categories: [1, 2, 3, 4, 5, 6, 7, 8],
 			labels: {
 				style: {
 					colors: "white"
@@ -72,7 +72,7 @@ const Stalking = () => {
 	};
 	const series = [
 		{
-			data: [0, 5, 100, 200, 500],
+			data: [0, 300, 140, 170, 120, 500, 100, 450, 230],
 		},
 	];
 	return (
@@ -166,7 +166,7 @@ const Stalking = () => {
 					<h4 className="text-white" style={{ fontSize: "20px" }}>
 						46,568.23 &nbsp;
 					</h4>
-					<span className="" style={{ opacity: '0.5' }}>/Svent Staked</span>
+					<span className="" style={{ opacity: '0.5' }}>/ Svent Staked</span>
 				</Box>
 
 				<Box sx={{ marginTop: "10px" }}>
