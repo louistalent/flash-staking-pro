@@ -11,6 +11,7 @@ import styles from "./style.module.css";
 import MobileDrawer from "../Drawer";
 
 const Header = ({ mainHeading, mobile }) => {
+	const [user, setUser] = useState(false);
 	return (
 		<Box className={styles.mainContainer} mt={2}>
 			{mobile <= 768 ? (
@@ -55,7 +56,7 @@ const Header = ({ mainHeading, mobile }) => {
           </Box> */}
 
 					<Box className={styles.dropdown}>
-						<Box className={styles.usercontainer}>
+						<Box onClick={() => setUser(!user)} className={styles.usercontainer}>
 							<Box padding={1} >
 								{/* <Typography className={styles.username}>John Smith</Typography> */}
 								<Typography className={styles.id}>
@@ -65,6 +66,12 @@ const Header = ({ mainHeading, mobile }) => {
 							<img className={styles.userimg} src={useravatar} />
 							<img className={styles.drop} src={dropdown} />
 						</Box>
+						{
+							user &&
+							<Box className={styles.userDropdown}>
+								Disconnect
+							</Box>
+						}
 
 					</Box>
 				</Box>

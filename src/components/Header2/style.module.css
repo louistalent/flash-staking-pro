@@ -73,11 +73,15 @@
 
 .userDropdown {
   position: absolute;
-  top: 30px;
-  width: 200px;
-  background-color: green;
-  color: white;
+  top: 46px;
+  left: 0;
+  right: 0;
+  border-radius: 30px;
+  background: linear-gradient(180deg, rgba(251, 191, 4, 0) 0%, rgba(251, 191, 4, 0.05) 100%);
+  border: 1px solid rgba(251, 191, 4, 0.2);
   font-size: 16px;
+  color: white;
+  padding: 8px 10px;
 }
 
 .drop {
