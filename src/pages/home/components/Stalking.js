@@ -49,7 +49,7 @@ const Stalking = () => {
 		},
 
 		xaxis: {
-			categories: ["Jun 16", "Jun 17", "Jun 18", "Jun 19", "Jun 20", "Jun 21", "Jun 22", "Jun 23", "Jun 24"],
+			categories: ["Jun 16", "Jun 17", "Jun 18", "Jun 19", "Jun 20", "Jun 21"],
 			labels: {
 				style: {
 					colors: "white",
@@ -72,7 +72,7 @@ const Stalking = () => {
 	};
 	const series = [
 		{
-			data: [0, 300, 140, 170, 120, 500, 100, 450, 230],
+			data: [0, 300, 140, 500, 170, 120],
 		},
 	];
 	return (
