@@ -17,9 +17,9 @@ const Token = () => {
         }}>
             <Box display="flex" justifyContent="space-between">
                 <h4 className='text-white' style={{ fontSize: '20px' }}>Token Rate</h4>
-                <IconButton>
+                {/* <IconButton>
                     <HiDotsHorizontal color='#FFFFFF' />
-                </IconButton>
+                </IconButton> */}
             </Box>
 
             <Box sx={{ marginTop: "20px" }}>
