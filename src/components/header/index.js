@@ -75,7 +75,7 @@ const Header = ({ mobile, rightimg, leftimg, userid2, userid, mainHeading }) => 
                         sx={{
                             backgroundColor: "#FBBF04",
                             color: "black",
-                            width: "187px",
+                            width: "180px",
                             fontSize: "16px",
                             borderRadius: "10px",
                             textTransform: "capitalize",
@@ -88,6 +88,7 @@ const Header = ({ mobile, rightimg, leftimg, userid2, userid, mainHeading }) => 
                         startIcon={<img src={imgWallet} className="me-1" alt="Wallet" />}
                     >
                         Connect Wallet
+
                     </Button>
                     <Box className={styles.dropdown}>
                         <Box onClick={() => setUser(!user)} className={styles.usercontainer}>
